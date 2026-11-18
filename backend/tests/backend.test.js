@@ -155,6 +155,22 @@ runTest('GeminiService constructs domain-specific prompts for legal and medical 
   assert.ok(medicalPrompt.includes('in-depth comprehensive analysis'));
 });
 
+runTest('NLPSummarizer synthesizes scanned/image-based documents without throwing', () => {
+  const scannedPlaceholder = '[Certified Scanned Document: images.pdf (124.5 KB)]\nPages: 3\nMode: Multimodal Vision OCR Ingestion Active';
+  const summary = NLPSummarizer.summarize(scannedPlaceholder, {
+    domain: 'legal',
+    filename: 'images.pdf',
+    isScanned: true
+  });
+
+  assert.strictEqual(summary.domain, 'legal');
+  assert.ok(summary.overview.length > 20, 'Overview must be populated');
+  assert.ok(summary.actionNote.length > 10, 'Action note must be present');
+  assert.ok(summary.structuredCategories.length >= 3, 'Must contain standard structured categories');
+  assert.ok(summary.executiveDigest.length >= 3, 'Must contain executive digest points');
+  assert.ok(summary.metrics.compressionRatio, 'Must report metrics');
+});
+
 console.log(`\nResults: ${passedTests}/${totalTests} tests passed.\n`);
 if (passedTests === totalTests) {
   console.log('🎉 Backend milestone (30%+) verified and operating cleanly!');

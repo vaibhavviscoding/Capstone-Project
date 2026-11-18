@@ -26,8 +26,8 @@
   </style>
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Client-side PDF Parser for drag-and-drop document ingestion -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <!-- Client-side PDF Parser for drag-and-drop document ingestion (Local zero-CORS) -->
+  <script src="js/pdf.min.js"></script>
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -376,12 +376,12 @@
 
                 <!-- Upload Dropzone View -->
                 <div class="relative group cursor-pointer rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors p-space-xl text-center flex flex-col items-center justify-center" id="dropzone-panel">
-                  <input accept=".pdf,.docx,.txt,.md" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full z-10" id="file-input" type="file"/>
+                  <input accept=".pdf,.docx,.txt,.md,.png,.jpg,.jpeg,.webp" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full z-10" id="file-input" type="file"/>
                   <div class="w-14 h-14 rounded-full bg-primary/5 text-primary-container flex items-center justify-center mb-space-md group-hover:scale-105 transition-transform shadow-sm">
                     <span class="material-symbols-outlined text-[30px]" id="upload-icon">cloud_upload</span>
                   </div>
                   <p class="font-headline-sm text-headline-sm text-primary font-medium mb-space-xs" id="upload-primary-text">Drag and drop your document here</p>
-                  <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg" id="upload-secondary-text">Supports PDF, DOCX, TXT, MD (up to 25MB)</p>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg" id="upload-secondary-text">Supports PDF, Scans &amp; Images, DOCX, TXT (up to 25MB)</p>
                   <button class="px-space-lg py-space-xs bg-surface-container-lowest text-primary font-label-lg text-label-lg font-semibold rounded shadow-sm group-hover:shadow transition-shadow flex items-center gap-space-xs pointer-events-none" type="button">
                     <span class="material-symbols-outlined text-[18px]">folder_open</span>
                     <span>Browse Files</span>

@@ -173,6 +173,7 @@ router.post('/documents/redact', (req, res) => {
 
 /**
  * Summarize document with Google Gemini API (Free lowest-tier model) or domain-tailored NLP scoring
+ * Supports pure text and multimodal document scans / PDFs
  */
 router.post('/documents/summarize', async (req, res) => {
   try {
@@ -182,24 +183,31 @@ router.post('/documents/summarize', async (req, res) => {
       summaryDepth = 'standard',
       targetSentenceCount = 5,
       apiKey: explicitKey,
-      model: explicitModel
+      model: explicitModel,
+      fileBase64,
+      mimeType = 'application/pdf',
+      filename
     } = req.body;
 
-    if (!text) {
-      return res.status(400).json({ error: 'Missing text in request body' });
+    if (!text && !fileBase64) {
+      return res.status(400).json({ error: 'Missing document text or file payload in request body' });
     }
 
+    const docText = text || `[Document: ${filename || 'Uploaded Document'}]`;
     const apiKey = explicitKey || req.headers['x-gemini-api-key'];
     const model = explicitModel || req.headers['x-gemini-model'];
 
-    // 1. Attempt Google Gemini API if key is present
+    // 1. Attempt Google Gemini API if key is present (handles multimodal PDF/scans natively)
     if (GeminiService.isAvailable(apiKey)) {
       try {
-        const geminiResult = await GeminiService.summarizeDocument(text, {
+        const geminiResult = await GeminiService.summarizeDocument(docText, {
           domain,
           summaryDepth,
           apiKey,
-          model
+          model,
+          fileBase64,
+          mimeType,
+          filename
         });
 
         return res.json({
@@ -213,10 +221,12 @@ router.post('/documents/summarize', async (req, res) => {
     }
 
     // 2. Resilient Fallback: Domain-tailored NLP Summarization Engine
-    const summaryResult = NLPSummarizer.summarize(text, {
+    const summaryResult = NLPSummarizer.summarize(docText, {
       domain,
       summaryDepth,
-      targetSentenceCount
+      targetSentenceCount,
+      filename,
+      isScanned: Boolean(fileBase64)
     });
 
     res.json({

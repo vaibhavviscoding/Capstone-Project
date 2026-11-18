@@ -1,5 +1,26 @@
 [
   {
+    "id": "doc-1794990216943",
+    "date": "Nov 18, 2026",
+    "title": "images.pdf",
+    "type": "Legal",
+    "icon": "gavel",
+    "overview": "\"RECITALS\nWHEREAS, Assignor has developed certain proprietary algorithmic architectures, natural language parsing pipelines, and confidential know-how relating to high-throughput document verification systems; and\nWHEREAS, Assignee desires to acquire all worldwide right, title, and interest in and to such developments, and Assignor agrees to assign all such rights upon the covenants, conditions, and consideration stated herein. For a period of twenty-four (24) months following the Effective Date, Assignor covenants that he shall not directly or indirectly engage in, advise, invest in, or provide technical consulting services to any entity commercializing automated legal or medical document extraction engines within North America or the European Union.\"",
+    "highlights": [
+      "Core Obligations & Covenants: RECITALS\nWHEREAS, Assignor has developed certain proprietary algorithmic architectures, natural language parsing pipelines, and confidential know-how relating to high-throughput document verification systems; and\nWHEREAS, Assignee desires to acquire all worldwide right, title, and interest in and to such developments, and Assignor agrees to assign all such rights upon the covenants, conditions, and consideration stated herein.",
+      "Core Obligations & Covenants: Assignor shall execute and deliver all such deeds, patent declarations, and documents as Assignee may reasonably request to perfect Assignee's title.",
+      "Core Obligations & Covenants: SECTION 2: RESTRICTIVE COVENANTS AND NON-COMPETITION\n2.1 Non-Compete Period.",
+      "Risk, Indemnity & Liabilities: SECTION 3: REPRESENTATIONS, WARRANTIES, AND DISCLAIMERS\n3.1 Title and Non-Infringement."
+    ],
+    "actionNote": "RECITALS\nWHEREAS, Assignor has developed certain proprietary algorithmic architectures, natural language parsing pipelines, and confidential know-how relating to high-throughput document verification systems; and\nWHEREAS, Assignee desires to acquire all worldwide right, title, and interest in and to such developments, and Assignor agrees to assign all such rights upon the covenants, conditions, and consideration stated herein.",
+    "confidence": "99.4%",
+    "compression": "73%",
+    "wordsSaved": "762 to 209 words",
+    "providerName": "Briefly Core Extractive NLP",
+    "isGemini": false,
+    "model": "Briefly Core Extractive NLP (Zero Key Required)"
+  },
+  {
     "id": "doc-1",
     "title": "Master_IP_Assignment_Agreement.pdf",
     "type": "Legal",
