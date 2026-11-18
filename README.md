@@ -20,7 +20,7 @@
   <strong>Faculty Supervisor / Guide:</strong> Prof. Shweta
 </p>
 
-[Research Paper (PDF)](docs/Briefly_Research_Paper.pdf) &bull; [Research Paper (Markdown)](docs/RESEARCH_PAPER.md) &bull; [Technical Report (PDF)](docs/Briefly_Technical_Report.pdf) &bull; [Technical Report (Markdown)](docs/TECHNICAL_REPORT.md) &bull; [Capstone Proposal](docs/CAPSTONE_PROPOSAL.md)
+[📄 Research Paper (PDF)](Briefly_Research_Paper.pdf) &bull; [📊 Technical Report (PDF)](Briefly_Technical_Report.pdf) &bull; [📖 Paper (Markdown)](docs/RESEARCH_PAPER.md) &bull; [📑 Report (Markdown)](docs/TECHNICAL_REPORT.md) &bull; [🎓 Proposal](docs/CAPSTONE_PROPOSAL.md)
 
 </div>
 
@@ -64,8 +64,8 @@ All foundational academic materials, research papers, and technical specificatio
 
 | Document | Format | Description |
 | :--- | :---: | :--- |
-| **Research Paper** | [PDF](docs/Briefly_Research_Paper.pdf) &bull; [Markdown](docs/RESEARCH_PAPER.md) | Full 7-page academic paper detailing methodology, scoring equations, related work, automated test results, limitations, and future scope. |
-| **Technical Report** | [PDF](docs/Briefly_Technical_Report.pdf) &bull; [Markdown](docs/TECHNICAL_REPORT.md) | 5-page engineering report detailing algorithm design, service responsibilities, and empirical validation suite. |
+| **Research Paper** | [PDF (Direct)](Briefly_Research_Paper.pdf) &bull; [PDF (docs/)](docs/Briefly_Research_Paper.pdf) &bull; [Markdown](docs/RESEARCH_PAPER.md) | Full 7-page academic paper detailing methodology, scoring equations, related work, automated test results, limitations, and future scope. |
+| **Technical Report** | [PDF (Direct)](Briefly_Technical_Report.pdf) &bull; [PDF (docs/)](docs/Briefly_Technical_Report.pdf) &bull; [Markdown](docs/TECHNICAL_REPORT.md) | 5-page engineering report detailing algorithm design, service responsibilities, and empirical validation suite. |
 | **Capstone Proposal & Synopsis** | [Markdown](docs/CAPSTONE_PROPOSAL.md) | Official undergraduate capstone proposal, problem statement, supervisor signatures, and UN SDG mapping. |
 | **Backend Architecture Report** | [Markdown](docs/BACKEND_ARCHITECTURE_REPORT.md) | Engineering roadmap, component breakdowns, and algorithmic specifications. |
 
