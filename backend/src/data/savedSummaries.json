@@ -1,0 +1,36 @@
+[
+  {
+    "id": "doc-1",
+    "title": "Master_IP_Assignment_Agreement.pdf",
+    "type": "Legal",
+    "date": "Oct 24, 2025",
+    "icon": "gavel",
+    "overview": "Master Intellectual Property Assignment, Non-Competition, and Mutual Indemnification Agreement between Apex Global Systems Inc. and Dr. Robert C. Vance assigning algorithmic document parsing technology.",
+    "highlights": [
+      "Section 1.1: Absolute assignment of worldwide patents, algorithms, trade secrets, and moral rights.",
+      "Section 2.1: 24-month restrictive non-compete restricted to North America and EU markets.",
+      "Section 4.1: Mutual indemnification capped at $1,500,000 direct damages."
+    ],
+    "actionNote": "Section 4.3 requires formal written notice of any third-party claim within 14 calendar days of receipt.",
+    "confidence": "99.4%",
+    "compression": "72%",
+    "wordsSaved": "6 min reading time saved"
+  },
+  {
+    "id": "doc-2",
+    "title": "Inpatient_Discharge_Cardiology.pdf",
+    "type": "Medical",
+    "date": "Oct 28, 2025",
+    "icon": "medical_services",
+    "overview": "Hospital discharge summary for 64-year-old male admitted with non-ST elevation myocardial infarction (NSTEMI) status-post successful drug-eluting stent placement to the Left Anterior Descending (LAD) coronary artery.",
+    "highlights": [
+      "Hemodynamics: Discharged stable with normal baseline ECG and preserved left ventricular ejection fraction of 52%.",
+      "Pharmacology: Dual antiplatelet therapy prescribed (Aspirin 81 mg daily + Ticagrelor 90 mg BID) with Atorvastatin 80 mg daily.",
+      "Allergies & Contraindications: Severe Penicillin allergy (anaphylaxis/hives); all NSAIDs strictly contraindicated."
+    ],
+    "actionNote": "Report immediately to Emergency if chest pressure persists >5 minutes or signs of bleeding occur. Cardiology clinic visit in 10 days.",
+    "confidence": "99.8%",
+    "compression": "68%",
+    "wordsSaved": "8 min reading time saved"
+  }
+]

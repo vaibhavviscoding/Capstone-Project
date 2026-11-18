@@ -1,0 +1,28 @@
+{
+  "name": "briefly-capstone",
+  "version": "1.0.0",
+  "description": "Briefly - Legal & Medical Document Summarizer and Verification Suite",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev": "node backend/src/server.js",
+    "test": "node backend/tests/backend.test.js"
+  },
+  "keywords": [
+    "nlp",
+    "gemini",
+    "gemini-flash",
+    "summarizer",
+    "legal-nlp",
+    "medical-nlp",
+    "capstone",
+    "accessibility",
+    "phi-redaction"
+  ],
+  "author": "Mimansha Bhandari, Kalpaja Sinha, Vaibhav Gupta (School of Computer Science, IILM University)",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
